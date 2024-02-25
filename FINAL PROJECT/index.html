@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FINAL PROJECT</title>
+    <style>
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%; /* Set the width of the container to 90% of the viewport width */
+            max-width: 800px; /* Set the maximum width of the container */
+            margin: 50px auto;
+            padding: 20px;
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&famil00000000000y=Protest+Strike&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/fae1994b1d.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--  Responsive css file  -->
+    <link rel="stylesheet" href="./css/responsive.css">
+  </head>
+  <body>
+    <video autoplay muted loop id="myVideo">
+        <source src="img/Falling cherry blossom petals..mp4" type="video/mp4">
+    </video>
+    
+    <!--  ======================= Start Header Area (Nav Bar) ============================== -->
+    <header class="header_area">
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar_fixed">
+                <a class="navbar-brand text-white" href="#"><i class="fa-solid fa-people-robbery"></i>BestLogo</a>
+    
+                <div class="off-screen-menu">
+                    <ul class="nav navbar-nav mt-5">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <a class="dropdown-item" href="#about-area">About</a>
+                                <a class="dropdown-item" href="#language-area">Languages</a>
+                                <a class="dropdown-item" href="#hobby-area">Hobbies</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hamburger-menu me-5">
+                    <div class="ham-bar bar-top"></div>
+                    <div class="ham-bar bar-mid"></div>
+                    <div class="ham-bar bar-bottom"></div>
+                </div>
+    
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="me-auto"></div>
+                    <ul class="nav navbar-nav" id="navbar">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdownMobile" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="aboutDropdownMobile">
+                                <a class="dropdown-item" href="#about-area">About</a>
+                                <a class="dropdown-item" href="#language-area">Languages</a>
+                                <a class="dropdown-item" href="#hobby-area">Hobbies</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#music-area">MUSIC</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!--  ======================== End Header Area =============================== -->
+
+    <!--  ======================= Start Main Area ================================ -->
+
+    <main class="site-main">
+        <!--  ======================= Start Banner Area =======================  -->
+        <section class="site-banner" id="home">
+            <div class="container-fluid content-box-darkgray">
+                <div class="row d-flex align-items-center justify-content-center" id="row1">
+                    <div class="col-lg-6 col-md-12 site-title" align="center">
+                        <h5 class="title-text text-uppercase an_first">Hi, My name is</h5>
+                        <h1 class="title-text text-uppercase an_second">Jirapat Anantasirijinda</h1>
+                        <h4 class="title-text text-uppercase an_third">This is my ITE-207 Project</h4>
+                        <div class="site-buttons d-flex align-items-center justify-content-center">
+                        <!--   d-flex class to the site-buttons div to make it a flex container.
+                            align-items-center to vertically align the items (buttons) at the center of the container.
+                            justify-content-center to horizontally align the items at the center of the container.-->
+                            <div class="d-flex flex-row flex-wrap">
+                                <button type="button" class="btn button primary-button me-4 text-uppercase" onclick="scrollToSection('about-area')">about</button>
+                                <button type="button" class="btn button primary-button text-uppercase">Contact</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 banner-image">
+                        <img src="img\reup-84.jpg" alt ="banner-img" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  ======================== End Banner Area =======================  -->
+
+        <!--  ========================= About Area ==========================  -->
+
+        <section class="about-area content-box-darkblue" id="about-area">
+            <div class="container-fluid content-box-gray">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 about-image d-flex align-items-center justify-content-center">
+                        <img src="./img/GF-K3VCbsAA-qmP.jfif" alt="About us" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2 class="text-uppercase pt-5 text-white">
+                            <span>Hello there</span>
+                            <span>__________</span>
+                            <span>I'll introduce</span>
+                            <span>myself</span>
+                        </h2>
+                        <div class="paragraph py-5 w-75">
+                            <p class="para">
+                                My name is Jirapat Anantasirijinda 
+                                I'm from Thai-Nichi Institute of Technology 
+                                I'm nineteen years old. I began coding when I was in grade 10, and since many of my friends also code, I chose to major in IT in college.
+                            </p>
+                            <p class="para">
+                                My MBTI is ENFJ, I like to play video games, communicate with people, Attend events especially those featuring idols and cover bands.
+                            </p>
+                        </div>
+                        <!--<button type="button" class="btn button primary-button text-uppercase">About</button>-->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  ========================= End About Area ==========================  -->
+
+
+        <!--  ====================== Start language Area =============================  -->
+
+        <section class="language-area content-box-darkpurple" id="language-area">
+            <div class="container content-box-gray">
+                <div class="row">
+                    <div class="col-lg-12 text-center language-title">
+                        <h1 class="text-uppercase title-text">Spoken Language</h1>
+                        <p class="para mt-5">
+                            Since I was a young, I have learned Chinese. English was another subject I learned in middle school. I have been learning Japanese since I started high school.
+                        </p>
+                    </div>
+                </div>
+                <div class="container ">
+                    <div class="row" id="lang-img">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div>
+                                <div class="text-center py-4">
+                                    <img src="./img/services/thailand.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div>
+                                <div class="text-center py-4">
+                                    <img src="./img/services/united-kingdom.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div>
+                                <div class="text-center py-4">
+                                    <img src="./img/services/china.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div>
+                                <div class="text-center py-4">
+                                    <img src="./img/services/japan.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  ====================== End language Area =============================  -->
+
+
+        <!--  ====================== Hobby Area =============================  -->
+        <section class="hobby-area content-box-darkteal" id="hobby-area">
+            <div class="container content-box-gray">
+                <div class="row">
+                    <div class="col-lg-12 text-center hobby-title">
+                        <h1 class="text-uppercase title-text"> Hobbies</h1>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="wrapper" id="w1">
+                                <div class="text-center py-4 image font-ps">
+                                    <img src="/img/league-of-legends-desktop-background-jk70emfq9rgxk1qm.jpg" class="img-fluid">
+                                    <div class="content">
+                                        <h1>League of Legends</h1>
+                                        <p class="para">Commonly referred to as League, is a 2009 multiplayer online battle arena video game developed and published by Riot Games.  </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="wrapper" id="w2">
+                                <div class="text-center py-4 image font-ps">
+                                    <img src="/img/IMG_4777-1024x683.jpg" class="img-fluid">
+                                    <div class="content">
+                                        <h1>Concerts</h1>
+                                        <p class="para">I frequently attend concerts, cover dances, or idol events in my free time because I enjoy the show and it helps me decompress after working or studying.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="wrapper" id="w3">
+                                <div class="text-center py-4 image font-ps">
+                                    <img src="/img/961385.jpg" class="img-fluid">
+                                    <div class="content">
+                                        <h1>Musics</h1>
+                                        <p class="para">I love music, especially Japanese music. J-POP and J-Rock are two of my favorite genres. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="wrapper" id="w4">
+                                <div class="text-center py-4 image font-ps">
+                                    <img src="/img/yousician-educational-photography-21-1024x683.jpg" class="img-fluid">
+                                    <div class="content">
+                                        <h1>Instruments</h1>
+                                        <p class="para">I'm proficient with instruments like the guitar and flute.
+                                            It was something I used to practice in elementary school. But I had to leave it at home when I started university, so I didn't play.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     <!--===== WORK =====-->
+
+     <section class="music-area content-box-darkred" id="music-area">
+        <div class="container content-box-gray">
+            <div class="row mx-2">
+                <div class="music-area col-lg-6 col-md-7 col-sm-12 mb-4 d-none d-lg-block">
+                    <div class="player">
+                        <div class="player-top">
+                          <button class="player-btn" type="button">
+                            <i class="fa-solid fa-arrow-left"></i>
+                          </button>
+                          <span>Spotify Music App</span>
+                          <button class="player-btn" type="button">
+                            <i class="fa-solid fa-ellipsis"></i>
+                          </button>
+                        </div>
+                        <div class="player-body">
+                          <div class="current-song">
+                            <div class="cover">
+                                <span>BiSH</span>
+                                <span>プロミスザスター</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="song-info">
+                          <div class="song-details">
+                            <span class="song-name">プロミスザスター</span>
+                            <span class="song-artist">BiSH</span>
+                          </div>
+                          <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="song-duration">
+                          <div class="song-time">
+                            <div class="song-progress">
+                              <audio src="music/BiSH - プロミスザスター.mp3" class="audio"></audio>
+                            </div>
+                          </div>
+                          <div class="time">
+                            <span>0:00</span>
+                            <span>0:00</span>
+                          </div>
+                        </div>
+                        <div class="controls">
+                          <button class="player-btn" type="button">
+                            <i class="fa-solid fa-shuffle"></i>
+                          </button>
+                          <button class="player-btn prev-btn" type="button">
+                            <i class="fa-solid fa-backward"></i>
+                          </button>
+                          <button class="player-btn play-pause" type="button">
+                            <i class="fa-solid fa-play"></i>
+                          </button>
+                          <button class="player-btn next-btn" type="button">
+                            <i class="fa-solid fa-forward"></i>
+                          </button>
+                          <button class="player-btn" type="button">
+                            <i class="fa-solid fa-repeat"></i>
+                          </button>
+                        </div>
+                        <div class="player-footer">
+                          <i class="fa-sharp fa-solid fa-music"></i>
+                          <span>Listen to Spotify Music</span>
+                          <i class="fa-sharp fa-solid fa-list"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-area col-lg-6 col-md-5 col-sm-12 text-center">
+                    <h1 class="text-uppercase title-text font-ps">Favorite Song of All time</h1>
+                    <div class="col-12 mb-5 content-box-gray-music" id="cbgm1">
+                        <img src="/img/Heroines.png" class="img-fluid">
+                        <p class="para mt-3">
+                            Here are some of the bands and songs I enjoy listening to every day. I'd like you to listen to it a little. It is something I cannot live without on a daily basis. 
+                        </p>
+                    </div>
+                    <div class="accordion content-box-gray-music" id="accordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              BiSH
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                            <div class="accordion-body flex-wrap">
+                                <div class="col-12 mb-5">
+                                    <img src="/img/BiSH.png" class="img-fluid">
+                                </div>
+                                <div class="col-auto">
+                                    <button class="player-btn play" onclick="selectPlay(0)" type="button">
+                                        <i class="fa-solid fa-play"  style="font-size: small"></i>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <p class="ps-4">
+                                        プロミスザスター
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="col-auto">
+                                    <button class="player-btn play" onclick="selectPlay(1)" type="button">
+                                        <i class="fa-solid fa-play"  style="font-size: small"></i>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <p class="ps-4">
+                                        beautifulさ
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="col-auto">
+                                    <button class="player-btn play" onclick="selectPlay(2)" type="button">
+                                        <i class="fa-solid fa-play"  style="font-size: small"></i>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <p class="ps-4">
+                                        オーケストラ
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="col-auto">
+                                    <button class="player-btn play" onclick="selectPlay(3)" type="button">
+                                        <i class="fa-solid fa-play"  style="font-size: small"></i>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <p class="ps-4">
+                                        星が瞬く夜に
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="col-auto">
+                                    <button class="player-btn play" onclick="selectPlay(4)" type="button">
+                                        <i class="fa-solid fa-play"  style="font-size: small"></i>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <p class="ps-4">
+                                        My Landscape
+                                    </p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              iLiFE!
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                            <div class="accordion-body flex-wrap">
+                                <div class="col-12 mb-5">
+                                    <img src="/img/iLiFE!.jpg" class="img-fluid">
+                                </div>
+                                <div class="col-auto">
+                                    <button class="player-btn play" onclick="selectPlay(5)" type="button">
+                                        <i class="fa-solid fa-play"  style="font-size: small"></i>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <p class="ps-4">
+                                        Hands Up!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="col-auto">
+                                    <button class="player-btn play" onclick="selectPlay(6)" type="button">
+                                        <i class="fa-solid fa-play"  style="font-size: small"></i>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <p class="ps-4">
+                                        HUNGRY!!!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="col-auto">
+                                    <button class="player-btn play" onclick="selectPlay(7)" type="button">
+                                        <i class="fa-solid fa-play"  style="font-size: small"></i>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <p class="ps-4">
+                                        KiSEK!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="col-auto">
+                                    <button class="player-btn play" onclick="selectPlay(8)" type="button">
+                                        <i class="fa-solid fa-play"  style="font-size: small"></i>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <p class="ps-4">
+                                        ヒラリラリア
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="col-auto">
+                                    <button class="player-btn play" onclick="selectPlay(9)" type="button">
+                                        <i class="fa-solid fa-play"  style="font-size: small"></i>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <p class="ps-4">
+                                        黄昏サイクル
+                                    </p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                GILTY X GILTY
+                              </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                              <div class="accordion-body flex-wrap">
+                                  <div class="col-12 mb-5">
+                                      <img src="/img/GILTY.png" class="img-fluid">
+                                  </div>
+                                  <div class="col-auto">
+                                      <button class="player-btn play" onclick="selectPlay(10)" type="button">
+                                          <i class="fa-solid fa-play"  style="font-size: small"></i>
+                                      </button>
+                                  </div>
+                                  <div class="col">
+                                      <p class="ps-4">
+                                            Mani    
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="accordion-body">
+                                  <div class="col-auto">
+                                      <button class="player-btn play" onclick="selectPlay(11)" type="button">
+                                          <i class="fa-solid fa-play"  style="font-size: small"></i>
+                                      </button>
+                                  </div>
+                                  <div class="col">
+                                      <p class="ps-4">
+                                            TARANTULA
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="accordion-body">
+                                  <div class="col-auto">
+                                      <button class="player-btn play" onclick="selectPlay(12)" type="button">
+                                          <i class="fa-solid fa-play"  style="font-size: small"></i>
+                                      </button>
+                                  </div>
+                                  <div class="col">
+                                      <p class="ps-4">
+                                            UNIVERSE
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="accordion-body">
+                                  <div class="col-auto">
+                                      <button class="player-btn play" onclick="selectPlay(13)" type="button">
+                                          <i class="fa-solid fa-play"  style="font-size: small"></i>
+                                      </button>
+                                  </div>
+                                  <div class="col">
+                                      <p class="ps-4">
+                                            秘密の箱
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="accordion-body">
+                                  <div class="col-auto">
+                                      <button class="player-btn play" onclick="selectPlay(14)" type="button">
+                                          <i class="fa-solid fa-play"  style="font-size: small"></i>
+                                      </button>
+                                  </div>
+                                  <div class="col">
+                                      <p class="ps-4">
+                                        スニーカーシンデレラ
+                                      </p>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                SILENT SIREN
+                              </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                              <div class="accordion-body flex-wrap">
+                                  <div class="col-12 mb-5">
+                                      <img src="/img/silent siren.jpg" class="img-fluid">
+                                  </div>
+                                  <div class="col-auto">
+                                      <button class="player-btn play" onclick="selectPlay(15)" type="button">
+                                          <i class="fa-solid fa-play"  style="font-size: small"></i>
+                                      </button>
+                                  </div>
+                                  <div class="col">
+                                      <p class="ps-4">
+                                        19 summer note  
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="accordion-body">
+                                  <div class="col-auto">
+                                      <button class="player-btn play" onclick="selectPlay(16)" type="button">
+                                          <i class="fa-solid fa-play"  style="font-size: small"></i>
+                                      </button>
+                                  </div>
+                                  <div class="col">
+                                      <p class="ps-4">
+                                        Merry-go-round
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="accordion-body">
+                                  <div class="col-auto">
+                                      <button class="player-btn play" onclick="selectPlay(17)" type="button">
+                                          <i class="fa-solid fa-play"  style="font-size: small"></i>
+                                      </button>
+                                  </div>
+                                  <div class="col">
+                                      <p class="ps-4">
+                                        Routine
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="accordion-body">
+                                  <div class="col-auto">
+                                      <button class="player-btn play" onclick="selectPlay(18)" type="button">
+                                          <i class="fa-solid fa-play"  style="font-size: small"></i>
+                                      </button>
+                                  </div>
+                                  <div class="col">
+                                      <p class="ps-4">
+                                        Soukai Rock
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="accordion-body">
+                                  <div class="col-auto">
+                                      <button class="player-btn play" onclick="selectPlay(19)" type="button">
+                                          <i class="fa-solid fa-play"  style="font-size: small"></i>
+                                      </button>
+                                  </div>
+                                  <div class="col">
+                                      <p class="ps-4">
+                                        八月の夜
+                                      </p>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                OTHERS
+                              </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
+                              <div class="accordion-body flex-wrap">
+                                  <div class="col-12 mb-5">
+                                      <img src="/img/Yoruami.jfif" class="img-fluid">
+                                  </div>
+                                  <div class="col-auto">
+                                      <button class="player-btn play" onclick="selectPlay(20)" type="button">
+                                          <i class="fa-solid fa-play"  style="font-size: small"></i>
+                                      </button>
+                                  </div>
+                                  <div class="col">
+                                      <p class="ps-4">
+                                        夜光性アミューズ / N.P.C
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="accordion-body">
+                                  <div class="col-auto">
+                                      <button class="player-btn play" onclick="selectPlay(21)" type="button">
+                                          <i class="fa-solid fa-play"  style="font-size: small"></i>
+                                      </button>
+                                  </div>
+                                  <div class="col">
+                                      <p class="ps-4">
+                                        AIBECK / AISola
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="accordion-body">
+                                  <div class="col-auto">
+                                      <button class="player-btn play" onclick="selectPlay(22)" type="button">
+                                          <i class="fa-solid fa-play"  style="font-size: small"></i>
+                                      </button>
+                                  </div>
+                                  <div class="col">
+                                      <p class="ps-4">
+                                        JamsCollection / NEW ERA PUNCH!!
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="accordion-body">
+                                  <div class="col-auto">
+                                      <button class="player-btn play" onclick="selectPlay(23)" type="button">
+                                          <i class="fa-solid fa-play"  style="font-size: small"></i>
+                                      </button>
+                                  </div>
+                                  <div class="col">
+                                      <p class="ps-4">
+                                        LEIWAN / SUKIkirai
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="accordion-body">
+                                  <div class="col-auto">
+                                      <button class="player-btn play" onclick="selectPlay(24)" type="button">
+                                          <i class="fa-solid fa-play"  style="font-size: small"></i>
+                                      </button>
+                                  </div>
+                                  <div class="col">
+                                      <p class="ps-4">
+                                        MAD MEDiCiNE / 眠罪
+                                      </p>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                      </div>
+                </div>
+            </div>
+          </div>
+     </section>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Contact Me</p>
+        <div class="footer__social">
+            <a href="https://www.facebook.com/sousettia/" class="footer__icon" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/sousettia.xxasl/" class="footer__icon" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/Sousettia" class="footer__icon" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://github.com/Sousettia" class="footer__icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <!-- ====================== Scroll Up ============================= -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <!-- ====================== End Scroll Up ============================= -->
+
+    <!--  ======================= End Main Area ================================ -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="app.js"></script>
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

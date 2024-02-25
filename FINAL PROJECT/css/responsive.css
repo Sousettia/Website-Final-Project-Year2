@@ -1,0 +1,155 @@
+@media only screen and (max-width: 340px){
+    .site-title{
+        padding-top: 20%;
+    }
+    .site-main .about-area .about-title h2 > span{
+        font-size: 31px;
+        letter-spacing: 10px;
+    }
+    .site-main .hobby-area .wrapper p{
+        font-size: 15px;
+        padding: 1%;
+    }
+
+}
+
+@media only screen and (max-width: 767px){
+
+    .site-main .about-area .about-title h2 > span{
+        font-size: 31px;
+        letter-spacing: 10px;
+    }
+
+    .site-title{
+        padding-top: 15%;
+    }
+    .header_area .main-menu .navbar .navbar-brand {
+        margin-left: 3rem;
+    }
+    .site-main .hobby-area .wrapper p{
+        padding: 1%;
+    }
+    .player{
+        display: block;
+    }
+}
+
+/* ----------------------------------------------------------- 1200 */
+
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+    
+    .site-main .about-area .about-title h2 > span{
+        font-size: 31px;
+        letter-spacing: 10px;
+    }
+
+    .site-main .about-area .about-title p{
+        padding: 0%;
+    }
+
+    .site-title{
+        padding-top: 15%;
+    }
+    .header_area .main-menu .navbar .navbar-brand {
+        margin-left: 3rem;
+    }
+    .site-main .hobby-area .wrapper p{
+        font-size: 20px;
+        padding: 1%;
+    }
+    .player {
+        display: none;
+    }
+    .text-area {
+        width: 100%;
+    }
+}
+
+/* ----------------------------------------------------------- 1400 */
+
+@media only screen and (min-width: 1201px) and (max-width: 1400px){
+
+
+    .site-main .about-area .about-title h2 > span{
+        font-size: 31px;
+        letter-spacing: 10px;
+    }
+
+
+    .site-main .about-area .about-title p{
+        padding: 0%;
+    }
+    .header_area .main-menu .navbar .navbar-brand {
+        margin-left: 3rem;
+    }
+    .site-main .hobby-area .wrapper p{
+        font-size: 30px;
+        padding: 1%;
+    }
+    .off-screen-menu {
+        display: block;
+    }
+    .hamburger-menu {
+        display: none;
+    }
+    
+}
+
+/* if the viewport is equal to 1910px or less than that */ 
+@media only screen and (min-width: 1401px) and (max-width: 1910px){
+
+    .container{
+        max-width: 90%;
+    }
+
+    .site-main .language-area .language-title,
+    .site-main .hobby-area .hobby-title,
+    .site-main .about-area{
+        padding: 3% 4%;
+    }
+    .header_area .main-menu .navbar .navbar-brand {
+        margin-left: 3rem;
+    }
+    .site-main .hobby-area .wrapper p{
+        font-size: 25px;
+        padding: 1%;
+    }
+    .off-screen-menu {
+        display: block;
+    }
+    .hamburger-menu {
+        display: none;
+    }
+}
+@media only screen and (min-width: 1911px) {
+    .header_area .main-menu .navbar {
+        padding: .1rem 2rem;
+    }
+    .container{
+        max-width: 85%;
+    }
+
+    .site-main .language-area .language-title,
+    .site-main .hobby-area .hobby-title,
+    .site-main .about-area{
+        padding: 3% 4%;
+    }
+
+    .site-main .hobby-area .wrapper p{
+        font-size: 30px;
+        padding: 1%;
+    }
+
+    .header_area .main-menu .navbar .navbar-brand {
+        margin-left: 8rem;
+    }
+    .header_area .main-menu .navbar-nav{
+        margin-right: 8rem;
+    }
+    .off-screen-menu {
+        display: block;
+    }
+    .hamburger-menu {
+        display: none;
+    }
+}
