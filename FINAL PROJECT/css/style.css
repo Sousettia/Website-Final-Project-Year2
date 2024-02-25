@@ -1,10 +1,10 @@
 /* import fonts from fonts.css file  */
-@import url(./fonts.css);   
+
 
 @import url(./partials/_global.css);
 
 @import url(./partials/_variables.css);
-
+/* ----------------------------------------- */
 html{
     font-size: calc(60% + 0.8vmin)
 }
@@ -605,4 +605,22 @@ nav {
   letter-spacing: 1px;
   text-align: left;
   display: flex;
+}
+@font-face {
+  font-family: 'alex_brushregular';
+  src: url('fonts/alex_brush/alexbrush-regular-webfont.woff2') format('woff2'),
+       url('fonts/alex_brush/alexbrush-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'protest_strike';
+  src: url('/fonts/Protest_Strike/ProtestStrike-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}@font-face {
+  font-family: 'concert_one';
+  src: url('/fonts/Concert_One/ConcertOne-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
